@@ -1,0 +1,64 @@
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+html 
+	height: 100%
+
+body
+	min-width: 960px
+	max-width: 1200px
+	width: auto
+	background: $white
+	color: $black
+	margin: 0 auto
+	padding: 0
+	cursor: default
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif
+	font-size: 14px
+	line-height: 1.4
+	text-rendering: optimizeLegibility
+	+size(14)
+
+a 
+	color: $blue
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		color: darken($blue, 25%)
+	&:visited,
+	&:active,
+	&:link
+		color: darken($blue, 20%)
+
+address, block, code
+	display: block
+	padding: 16px
+	margin: 16px 0
+	+size(14)
+
+block, code
+	background-color: lighten($gray, 25%)
+
+p
+	+size(14)
+	padding: 0
+	margin: 16px 0
+
+ul 
+	list-style: none
+	margin: 0
+	padding: 0
+
+ul
+	li
+		margin: 0
+		padding: 0
+		text-indent: 0
+
+
+@media only screen and (max-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1280px) and (-o-min-device-pixel-ratio: 1.5), only screen and (max-width: 1280px) and (min-device-pixel-ratio: 1.25), only screen and (max-width: 480px)
+	body
+		width: 100%
+		+size(16)

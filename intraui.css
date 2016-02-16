@@ -1,0 +1,529 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+audio:not([controls]) { display: none; }
+
+[hidden] { display: none; }
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; }
+
+body, button, input, select, textarea { font-family: sans-serif; }
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+mark { background: #ff0; color: #000; }
+
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: "courier new", monospace; font-size: 1em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 75%; }
+
+blockquote { margin: 1em 40px; }
+
+sub { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+
+dd { margin: 0 0 0 40px; }
+
+nav ul, nav ol { list-style: none; list-style-image: none; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; }
+
+svg:not(:root) { overflow: hidden; }
+
+figure { margin: 0; }
+
+form { margin: 0; }
+
+fieldset { margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+legend { border: 0; *margin-left: -7px; }
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+button, input { line-height: normal; *overflow: visible; }
+
+table button, table input { *overflow: auto; }
+
+button, html input[type="button"], html input[type="reset"], html input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+textarea { overflow: auto; vertical-align: top; }
+
+table { border-spacing: 0; }
+
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+html { height: 100%; }
+
+body { min-width: 960px; max-width: 1200px; width: auto; background: #fff; color: #000; margin: 0 auto; padding: 0; cursor: default; font-family: "Open Sans", Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.4; text-rendering: optimizeLegibility; font-size: 14px; font-size: 0.875rem; }
+
+a { color: #0000e8; text-decoration: none; }
+a:hover { text-decoration: none; color: #000069; }
+a:visited, a:active, a:link { color: #000082; }
+
+address, block, code { display: block; padding: 16px; margin: 16px 0; font-size: 14px; font-size: 0.875rem; }
+
+block, code { background-color: #d9d9d9; }
+
+p { font-size: 14px; font-size: 0.875rem; padding: 0; margin: 16px 0; }
+
+ul { list-style: none; margin: 0; padding: 0; }
+
+ul li { margin: 0; padding: 0; text-indent: 0; }
+
+@media only screen and (max-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1280px) and (-o-min-device-pixel-ratio: 1.5), only screen and (max-width: 1280px) and (min-device-pixel-ratio: 1.25), only screen and (max-width: 480px) { body { width: 100%; font-size: 16px; font-size: 1rem; } }
+/*  Layout  */
+.grid-1 { width: 100%; }
+.grid-1:before, .grid-1:after { content: ""; display: table; }
+.grid-1:after { clear: both; }
+.grid-1 > .span-1 { display: block; float: left; width: 100%; padding: 0 10px; }
+.grid-1 > .span-1:first-child { padding-left: 0; }
+.grid-1 > .span-1:last-child { padding-right: 0; }
+
+.grid-2 { width: 100%; }
+.grid-2:before, .grid-2:after { content: ""; display: table; }
+.grid-2:after { clear: both; }
+.grid-2 > .span-1 { display: block; float: left; width: 50%; padding: 0 10px; }
+.grid-2 > .span-1:first-child { padding-left: 0; }
+.grid-2 > .span-1:last-child { padding-right: 0; }
+.grid-2 > .span-2 { display: block; float: left; width: 100%; padding: 0 10px; }
+.grid-2 > .span-2:first-child { padding-left: 0; }
+.grid-2 > .span-2:last-child { padding-right: 0; }
+
+.grid-3 { width: 100%; }
+.grid-3:before, .grid-3:after { content: ""; display: table; }
+.grid-3:after { clear: both; }
+.grid-3 > .span-1 { display: block; float: left; width: 33.33333%; padding: 0 10px; }
+.grid-3 > .span-1:first-child { padding-left: 0; }
+.grid-3 > .span-1:last-child { padding-right: 0; }
+.grid-3 > .span-2 { display: block; float: left; width: 66.66667%; padding: 0 10px; }
+.grid-3 > .span-2:first-child { padding-left: 0; }
+.grid-3 > .span-2:last-child { padding-right: 0; }
+.grid-3 > .span-3 { display: block; float: left; width: 100%; padding: 0 10px; }
+.grid-3 > .span-3:first-child { padding-left: 0; }
+.grid-3 > .span-3:last-child { padding-right: 0; }
+
+.grid-4 { width: 100%; }
+.grid-4:before, .grid-4:after { content: ""; display: table; }
+.grid-4:after { clear: both; }
+.grid-4 > .span-1 { display: block; float: left; width: 25%; padding: 0 10px; }
+.grid-4 > .span-1:first-child { padding-left: 0; }
+.grid-4 > .span-1:last-child { padding-right: 0; }
+.grid-4 > .span-2 { display: block; float: left; width: 50%; padding: 0 10px; }
+.grid-4 > .span-2:first-child { padding-left: 0; }
+.grid-4 > .span-2:last-child { padding-right: 0; }
+.grid-4 > .span-3 { display: block; float: left; width: 75%; padding: 0 10px; }
+.grid-4 > .span-3:first-child { padding-left: 0; }
+.grid-4 > .span-3:last-child { padding-right: 0; }
+.grid-4 > .span-4 { display: block; float: left; width: 100%; padding: 0 10px; }
+.grid-4 > .span-4:first-child { padding-left: 0; }
+.grid-4 > .span-4:last-child { padding-right: 0; }
+
+.grid-5 { width: 100%; }
+.grid-5:before, .grid-5:after { content: ""; display: table; }
+.grid-5:after { clear: both; }
+.grid-5 > .span-1 { display: block; float: left; width: 20%; padding: 0 10px; }
+.grid-5 > .span-1:first-child { padding-left: 0; }
+.grid-5 > .span-1:last-child { padding-right: 0; }
+.grid-5 > .span-2 { display: block; float: left; width: 40%; padding: 0 10px; }
+.grid-5 > .span-2:first-child { padding-left: 0; }
+.grid-5 > .span-2:last-child { padding-right: 0; }
+.grid-5 > .span-3 { display: block; float: left; width: 60%; padding: 0 10px; }
+.grid-5 > .span-3:first-child { padding-left: 0; }
+.grid-5 > .span-3:last-child { padding-right: 0; }
+.grid-5 > .span-4 { display: block; float: left; width: 80%; padding: 0 10px; }
+.grid-5 > .span-4:first-child { padding-left: 0; }
+.grid-5 > .span-4:last-child { padding-right: 0; }
+.grid-5 > .span-5 { display: block; float: left; width: 100%; padding: 0 10px; }
+.grid-5 > .span-5:first-child { padding-left: 0; }
+.grid-5 > .span-5:last-child { padding-right: 0; }
+
+.grid-6 { width: 100%; }
+.grid-6:before, .grid-6:after { content: ""; display: table; }
+.grid-6:after { clear: both; }
+.grid-6 > .span-1 { display: block; float: left; width: 16.66667%; padding: 0 10px; }
+.grid-6 > .span-1:first-child { padding-left: 0; }
+.grid-6 > .span-1:last-child { padding-right: 0; }
+.grid-6 > .span-2 { display: block; float: left; width: 33.33333%; padding: 0 10px; }
+.grid-6 > .span-2:first-child { padding-left: 0; }
+.grid-6 > .span-2:last-child { padding-right: 0; }
+.grid-6 > .span-3 { display: block; float: left; width: 50%; padding: 0 10px; }
+.grid-6 > .span-3:first-child { padding-left: 0; }
+.grid-6 > .span-3:last-child { padding-right: 0; }
+.grid-6 > .span-4 { display: block; float: left; width: 66.66667%; padding: 0 10px; }
+.grid-6 > .span-4:first-child { padding-left: 0; }
+.grid-6 > .span-4:last-child { padding-right: 0; }
+.grid-6 > .span-5 { display: block; float: left; width: 83.33333%; padding: 0 10px; }
+.grid-6 > .span-5:first-child { padding-left: 0; }
+.grid-6 > .span-5:last-child { padding-right: 0; }
+.grid-6 > .span-6 { display: block; float: left; width: 100%; padding: 0 10px; }
+.grid-6 > .span-6:first-child { padding-left: 0; }
+.grid-6 > .span-6:last-child { padding-right: 0; }
+
+.grid-7 { width: 100%; }
+.grid-7:before, .grid-7:after { content: ""; display: table; }
+.grid-7:after { clear: both; }
+.grid-7 > .span-1 { display: block; float: left; width: 14.28571%; padding: 0 10px; }
+.grid-7 > .span-1:first-child { padding-left: 0; }
+.grid-7 > .span-1:last-child { padding-right: 0; }
+.grid-7 > .span-2 { display: block; float: left; width: 28.57143%; padding: 0 10px; }
+.grid-7 > .span-2:first-child { padding-left: 0; }
+.grid-7 > .span-2:last-child { padding-right: 0; }
+.grid-7 > .span-3 { display: block; float: left; width: 42.85714%; padding: 0 10px; }
+.grid-7 > .span-3:first-child { padding-left: 0; }
+.grid-7 > .span-3:last-child { padding-right: 0; }
+.grid-7 > .span-4 { display: block; float: left; width: 57.14286%; padding: 0 10px; }
+.grid-7 > .span-4:first-child { padding-left: 0; }
+.grid-7 > .span-4:last-child { padding-right: 0; }
+.grid-7 > .span-5 { display: block; float: left; width: 71.42857%; padding: 0 10px; }
+.grid-7 > .span-5:first-child { padding-left: 0; }
+.grid-7 > .span-5:last-child { padding-right: 0; }
+.grid-7 > .span-6 { display: block; float: left; width: 85.71429%; padding: 0 10px; }
+.grid-7 > .span-6:first-child { padding-left: 0; }
+.grid-7 > .span-6:last-child { padding-right: 0; }
+.grid-7 > .span-7 { display: block; float: left; width: 100%; padding: 0 10px; }
+.grid-7 > .span-7:first-child { padding-left: 0; }
+.grid-7 > .span-7:last-child { padding-right: 0; }
+
+.grid-8 { width: 100%; }
+.grid-8:before, .grid-8:after { content: ""; display: table; }
+.grid-8:after { clear: both; }
+.grid-8 > .span-1 { display: block; float: left; width: 12.5%; padding: 0 10px; }
+.grid-8 > .span-1:first-child { padding-left: 0; }
+.grid-8 > .span-1:last-child { padding-right: 0; }
+.grid-8 > .span-2 { display: block; float: left; width: 25%; padding: 0 10px; }
+.grid-8 > .span-2:first-child { padding-left: 0; }
+.grid-8 > .span-2:last-child { padding-right: 0; }
+.grid-8 > .span-3 { display: block; float: left; width: 37.5%; padding: 0 10px; }
+.grid-8 > .span-3:first-child { padding-left: 0; }
+.grid-8 > .span-3:last-child { padding-right: 0; }
+.grid-8 > .span-4 { display: block; float: left; width: 50%; padding: 0 10px; }
+.grid-8 > .span-4:first-child { padding-left: 0; }
+.grid-8 > .span-4:last-child { padding-right: 0; }
+.grid-8 > .span-5 { display: block; float: left; width: 62.5%; padding: 0 10px; }
+.grid-8 > .span-5:first-child { padding-left: 0; }
+.grid-8 > .span-5:last-child { padding-right: 0; }
+.grid-8 > .span-6 { display: block; float: left; width: 75%; padding: 0 10px; }
+.grid-8 > .span-6:first-child { padding-left: 0; }
+.grid-8 > .span-6:last-child { padding-right: 0; }
+.grid-8 > .span-7 { display: block; float: left; width: 87.5%; padding: 0 10px; }
+.grid-8 > .span-7:first-child { padding-left: 0; }
+.grid-8 > .span-7:last-child { padding-right: 0; }
+.grid-8 > .span-8 { display: block; float: left; width: 100%; padding: 0 10px; }
+.grid-8 > .span-8:first-child { padding-left: 0; }
+.grid-8 > .span-8:last-child { padding-right: 0; }
+
+.grid-9 { width: 100%; }
+.grid-9:before, .grid-9:after { content: ""; display: table; }
+.grid-9:after { clear: both; }
+.grid-9 > .span-1 { display: block; float: left; width: 11.11111%; padding: 0 10px; }
+.grid-9 > .span-1:first-child { padding-left: 0; }
+.grid-9 > .span-1:last-child { padding-right: 0; }
+.grid-9 > .span-2 { display: block; float: left; width: 22.22222%; padding: 0 10px; }
+.grid-9 > .span-2:first-child { padding-left: 0; }
+.grid-9 > .span-2:last-child { padding-right: 0; }
+.grid-9 > .span-3 { display: block; float: left; width: 33.33333%; padding: 0 10px; }
+.grid-9 > .span-3:first-child { padding-left: 0; }
+.grid-9 > .span-3:last-child { padding-right: 0; }
+.grid-9 > .span-4 { display: block; float: left; width: 44.44444%; padding: 0 10px; }
+.grid-9 > .span-4:first-child { padding-left: 0; }
+.grid-9 > .span-4:last-child { padding-right: 0; }
+.grid-9 > .span-5 { display: block; float: left; width: 55.55556%; padding: 0 10px; }
+.grid-9 > .span-5:first-child { padding-left: 0; }
+.grid-9 > .span-5:last-child { padding-right: 0; }
+.grid-9 > .span-6 { display: block; float: left; width: 66.66667%; padding: 0 10px; }
+.grid-9 > .span-6:first-child { padding-left: 0; }
+.grid-9 > .span-6:last-child { padding-right: 0; }
+.grid-9 > .span-7 { display: block; float: left; width: 77.77778%; padding: 0 10px; }
+.grid-9 > .span-7:first-child { padding-left: 0; }
+.grid-9 > .span-7:last-child { padding-right: 0; }
+.grid-9 > .span-8 { display: block; float: left; width: 88.88889%; padding: 0 10px; }
+.grid-9 > .span-8:first-child { padding-left: 0; }
+.grid-9 > .span-8:last-child { padding-right: 0; }
+.grid-9 > .span-9 { display: block; float: left; width: 100%; padding: 0 10px; }
+.grid-9 > .span-9:first-child { padding-left: 0; }
+.grid-9 > .span-9:last-child { padding-right: 0; }
+
+.grid-10 { width: 100%; }
+.grid-10:before, .grid-10:after { content: ""; display: table; }
+.grid-10:after { clear: both; }
+.grid-10 > .span-1 { display: block; float: left; width: 10%; padding: 0 10px; }
+.grid-10 > .span-1:first-child { padding-left: 0; }
+.grid-10 > .span-1:last-child { padding-right: 0; }
+.grid-10 > .span-2 { display: block; float: left; width: 20%; padding: 0 10px; }
+.grid-10 > .span-2:first-child { padding-left: 0; }
+.grid-10 > .span-2:last-child { padding-right: 0; }
+.grid-10 > .span-3 { display: block; float: left; width: 30%; padding: 0 10px; }
+.grid-10 > .span-3:first-child { padding-left: 0; }
+.grid-10 > .span-3:last-child { padding-right: 0; }
+.grid-10 > .span-4 { display: block; float: left; width: 40%; padding: 0 10px; }
+.grid-10 > .span-4:first-child { padding-left: 0; }
+.grid-10 > .span-4:last-child { padding-right: 0; }
+.grid-10 > .span-5 { display: block; float: left; width: 50%; padding: 0 10px; }
+.grid-10 > .span-5:first-child { padding-left: 0; }
+.grid-10 > .span-5:last-child { padding-right: 0; }
+.grid-10 > .span-6 { display: block; float: left; width: 60%; padding: 0 10px; }
+.grid-10 > .span-6:first-child { padding-left: 0; }
+.grid-10 > .span-6:last-child { padding-right: 0; }
+.grid-10 > .span-7 { display: block; float: left; width: 70%; padding: 0 10px; }
+.grid-10 > .span-7:first-child { padding-left: 0; }
+.grid-10 > .span-7:last-child { padding-right: 0; }
+.grid-10 > .span-8 { display: block; float: left; width: 80%; padding: 0 10px; }
+.grid-10 > .span-8:first-child { padding-left: 0; }
+.grid-10 > .span-8:last-child { padding-right: 0; }
+.grid-10 > .span-9 { display: block; float: left; width: 90%; padding: 0 10px; }
+.grid-10 > .span-9:first-child { padding-left: 0; }
+.grid-10 > .span-9:last-child { padding-right: 0; }
+.grid-10 > .span-10 { display: block; float: left; width: 100%; padding: 0 10px; }
+.grid-10 > .span-10:first-child { padding-left: 0; }
+.grid-10 > .span-10:last-child { padding-right: 0; }
+
+.grid-11 { width: 100%; }
+.grid-11:before, .grid-11:after { content: ""; display: table; }
+.grid-11:after { clear: both; }
+.grid-11 > .span-1 { display: block; float: left; width: 9.09091%; padding: 0 10px; }
+.grid-11 > .span-1:first-child { padding-left: 0; }
+.grid-11 > .span-1:last-child { padding-right: 0; }
+.grid-11 > .span-2 { display: block; float: left; width: 18.18182%; padding: 0 10px; }
+.grid-11 > .span-2:first-child { padding-left: 0; }
+.grid-11 > .span-2:last-child { padding-right: 0; }
+.grid-11 > .span-3 { display: block; float: left; width: 27.27273%; padding: 0 10px; }
+.grid-11 > .span-3:first-child { padding-left: 0; }
+.grid-11 > .span-3:last-child { padding-right: 0; }
+.grid-11 > .span-4 { display: block; float: left; width: 36.36364%; padding: 0 10px; }
+.grid-11 > .span-4:first-child { padding-left: 0; }
+.grid-11 > .span-4:last-child { padding-right: 0; }
+.grid-11 > .span-5 { display: block; float: left; width: 45.45455%; padding: 0 10px; }
+.grid-11 > .span-5:first-child { padding-left: 0; }
+.grid-11 > .span-5:last-child { padding-right: 0; }
+.grid-11 > .span-6 { display: block; float: left; width: 54.54545%; padding: 0 10px; }
+.grid-11 > .span-6:first-child { padding-left: 0; }
+.grid-11 > .span-6:last-child { padding-right: 0; }
+.grid-11 > .span-7 { display: block; float: left; width: 63.63636%; padding: 0 10px; }
+.grid-11 > .span-7:first-child { padding-left: 0; }
+.grid-11 > .span-7:last-child { padding-right: 0; }
+.grid-11 > .span-8 { display: block; float: left; width: 72.72727%; padding: 0 10px; }
+.grid-11 > .span-8:first-child { padding-left: 0; }
+.grid-11 > .span-8:last-child { padding-right: 0; }
+.grid-11 > .span-9 { display: block; float: left; width: 81.81818%; padding: 0 10px; }
+.grid-11 > .span-9:first-child { padding-left: 0; }
+.grid-11 > .span-9:last-child { padding-right: 0; }
+.grid-11 > .span-10 { display: block; float: left; width: 90.90909%; padding: 0 10px; }
+.grid-11 > .span-10:first-child { padding-left: 0; }
+.grid-11 > .span-10:last-child { padding-right: 0; }
+.grid-11 > .span-11 { display: block; float: left; width: 100.0%; padding: 0 10px; }
+.grid-11 > .span-11:first-child { padding-left: 0; }
+.grid-11 > .span-11:last-child { padding-right: 0; }
+
+.grid-12 { width: 100%; }
+.grid-12:before, .grid-12:after { content: ""; display: table; }
+.grid-12:after { clear: both; }
+.grid-12 > .span-1 { display: block; float: left; width: 8.33333%; padding: 0 10px; }
+.grid-12 > .span-1:first-child { padding-left: 0; }
+.grid-12 > .span-1:last-child { padding-right: 0; }
+.grid-12 > .span-2 { display: block; float: left; width: 16.66667%; padding: 0 10px; }
+.grid-12 > .span-2:first-child { padding-left: 0; }
+.grid-12 > .span-2:last-child { padding-right: 0; }
+.grid-12 > .span-3 { display: block; float: left; width: 25%; padding: 0 10px; }
+.grid-12 > .span-3:first-child { padding-left: 0; }
+.grid-12 > .span-3:last-child { padding-right: 0; }
+.grid-12 > .span-4 { display: block; float: left; width: 33.33333%; padding: 0 10px; }
+.grid-12 > .span-4:first-child { padding-left: 0; }
+.grid-12 > .span-4:last-child { padding-right: 0; }
+.grid-12 > .span-5 { display: block; float: left; width: 41.66667%; padding: 0 10px; }
+.grid-12 > .span-5:first-child { padding-left: 0; }
+.grid-12 > .span-5:last-child { padding-right: 0; }
+.grid-12 > .span-6 { display: block; float: left; width: 50%; padding: 0 10px; }
+.grid-12 > .span-6:first-child { padding-left: 0; }
+.grid-12 > .span-6:last-child { padding-right: 0; }
+.grid-12 > .span-7 { display: block; float: left; width: 58.33333%; padding: 0 10px; }
+.grid-12 > .span-7:first-child { padding-left: 0; }
+.grid-12 > .span-7:last-child { padding-right: 0; }
+.grid-12 > .span-8 { display: block; float: left; width: 66.66667%; padding: 0 10px; }
+.grid-12 > .span-8:first-child { padding-left: 0; }
+.grid-12 > .span-8:last-child { padding-right: 0; }
+.grid-12 > .span-9 { display: block; float: left; width: 75%; padding: 0 10px; }
+.grid-12 > .span-9:first-child { padding-left: 0; }
+.grid-12 > .span-9:last-child { padding-right: 0; }
+.grid-12 > .span-10 { display: block; float: left; width: 83.33333%; padding: 0 10px; }
+.grid-12 > .span-10:first-child { padding-left: 0; }
+.grid-12 > .span-10:last-child { padding-right: 0; }
+.grid-12 > .span-11 { display: block; float: left; width: 91.66667%; padding: 0 10px; }
+.grid-12 > .span-11:first-child { padding-left: 0; }
+.grid-12 > .span-11:last-child { padding-right: 0; }
+.grid-12 > .span-12 { display: block; float: left; width: 100%; padding: 0 10px; }
+.grid-12 > .span-12:first-child { padding-left: 0; }
+.grid-12 > .span-12:last-child { padding-right: 0; }
+
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-device-pixel-ratio: 1.25), only screen and (max-width: 480px) { .grid-1 { width: 100%; }
+  .grid-1 > .span-1 { display: block; width: 100%; padding: 10px 0; }
+  .grid-2 { width: 100%; }
+  .grid-2 > .span-1 { display: block; width: 100%; padding: 10px 0; }
+  .grid-2 > .span-2 { display: block; width: 100%; padding: 10px 0; }
+  .grid-3 { width: 100%; }
+  .grid-3 > .span-1 { display: block; width: 100%; padding: 10px 0; }
+  .grid-3 > .span-2 { display: block; width: 100%; padding: 10px 0; }
+  .grid-3 > .span-3 { display: block; width: 100%; padding: 10px 0; }
+  .grid-4 { width: 100%; }
+  .grid-4 > .span-1 { display: block; width: 100%; padding: 10px 0; }
+  .grid-4 > .span-2 { display: block; width: 100%; padding: 10px 0; }
+  .grid-4 > .span-3 { display: block; width: 100%; padding: 10px 0; }
+  .grid-4 > .span-4 { display: block; width: 100%; padding: 10px 0; }
+  .grid-5 { width: 100%; }
+  .grid-5 > .span-1 { display: block; width: 100%; padding: 10px 0; }
+  .grid-5 > .span-2 { display: block; width: 100%; padding: 10px 0; }
+  .grid-5 > .span-3 { display: block; width: 100%; padding: 10px 0; }
+  .grid-5 > .span-4 { display: block; width: 100%; padding: 10px 0; }
+  .grid-5 > .span-5 { display: block; width: 100%; padding: 10px 0; }
+  .grid-6 { width: 100%; }
+  .grid-6 > .span-1 { display: block; width: 100%; padding: 10px 0; }
+  .grid-6 > .span-2 { display: block; width: 100%; padding: 10px 0; }
+  .grid-6 > .span-3 { display: block; width: 100%; padding: 10px 0; }
+  .grid-6 > .span-4 { display: block; width: 100%; padding: 10px 0; }
+  .grid-6 > .span-5 { display: block; width: 100%; padding: 10px 0; }
+  .grid-6 > .span-6 { display: block; width: 100%; padding: 10px 0; }
+  .grid-7 { width: 100%; }
+  .grid-7 > .span-1 { display: block; width: 100%; padding: 10px 0; }
+  .grid-7 > .span-2 { display: block; width: 100%; padding: 10px 0; }
+  .grid-7 > .span-3 { display: block; width: 100%; padding: 10px 0; }
+  .grid-7 > .span-4 { display: block; width: 100%; padding: 10px 0; }
+  .grid-7 > .span-5 { display: block; width: 100%; padding: 10px 0; }
+  .grid-7 > .span-6 { display: block; width: 100%; padding: 10px 0; }
+  .grid-7 > .span-7 { display: block; width: 100%; padding: 10px 0; }
+  .grid-8 { width: 100%; }
+  .grid-8 > .span-1 { display: block; width: 100%; padding: 10px 0; }
+  .grid-8 > .span-2 { display: block; width: 100%; padding: 10px 0; }
+  .grid-8 > .span-3 { display: block; width: 100%; padding: 10px 0; }
+  .grid-8 > .span-4 { display: block; width: 100%; padding: 10px 0; }
+  .grid-8 > .span-5 { display: block; width: 100%; padding: 10px 0; }
+  .grid-8 > .span-6 { display: block; width: 100%; padding: 10px 0; }
+  .grid-8 > .span-7 { display: block; width: 100%; padding: 10px 0; }
+  .grid-8 > .span-8 { display: block; width: 100%; padding: 10px 0; }
+  .grid-9 { width: 100%; }
+  .grid-9 > .span-1 { display: block; width: 100%; padding: 10px 0; }
+  .grid-9 > .span-2 { display: block; width: 100%; padding: 10px 0; }
+  .grid-9 > .span-3 { display: block; width: 100%; padding: 10px 0; }
+  .grid-9 > .span-4 { display: block; width: 100%; padding: 10px 0; }
+  .grid-9 > .span-5 { display: block; width: 100%; padding: 10px 0; }
+  .grid-9 > .span-6 { display: block; width: 100%; padding: 10px 0; }
+  .grid-9 > .span-7 { display: block; width: 100%; padding: 10px 0; }
+  .grid-9 > .span-8 { display: block; width: 100%; padding: 10px 0; }
+  .grid-9 > .span-9 { display: block; width: 100%; padding: 10px 0; }
+  .grid-10 { width: 100%; }
+  .grid-10 > .span-1 { display: block; width: 100%; padding: 10px 0; }
+  .grid-10 > .span-2 { display: block; width: 100%; padding: 10px 0; }
+  .grid-10 > .span-3 { display: block; width: 100%; padding: 10px 0; }
+  .grid-10 > .span-4 { display: block; width: 100%; padding: 10px 0; }
+  .grid-10 > .span-5 { display: block; width: 100%; padding: 10px 0; }
+  .grid-10 > .span-6 { display: block; width: 100%; padding: 10px 0; }
+  .grid-10 > .span-7 { display: block; width: 100%; padding: 10px 0; }
+  .grid-10 > .span-8 { display: block; width: 100%; padding: 10px 0; }
+  .grid-10 > .span-9 { display: block; width: 100%; padding: 10px 0; }
+  .grid-10 > .span-10 { display: block; width: 100%; padding: 10px 0; }
+  .grid-11 { width: 100%; }
+  .grid-11 > .span-1 { display: block; width: 100%; padding: 10px 0; }
+  .grid-11 > .span-2 { display: block; width: 100%; padding: 10px 0; }
+  .grid-11 > .span-3 { display: block; width: 100%; padding: 10px 0; }
+  .grid-11 > .span-4 { display: block; width: 100%; padding: 10px 0; }
+  .grid-11 > .span-5 { display: block; width: 100%; padding: 10px 0; }
+  .grid-11 > .span-6 { display: block; width: 100%; padding: 10px 0; }
+  .grid-11 > .span-7 { display: block; width: 100%; padding: 10px 0; }
+  .grid-11 > .span-8 { display: block; width: 100%; padding: 10px 0; }
+  .grid-11 > .span-9 { display: block; width: 100%; padding: 10px 0; }
+  .grid-11 > .span-10 { display: block; width: 100%; padding: 10px 0; }
+  .grid-11 > .span-11 { display: block; width: 100%; padding: 10px 0; }
+  .grid-12 { width: 100%; }
+  .grid-12 > .span-1 { display: block; width: 100%; padding: 10px 0; }
+  .grid-12 > .span-2 { display: block; width: 100%; padding: 10px 0; }
+  .grid-12 > .span-3 { display: block; width: 100%; padding: 10px 0; }
+  .grid-12 > .span-4 { display: block; width: 100%; padding: 10px 0; }
+  .grid-12 > .span-5 { display: block; width: 100%; padding: 10px 0; }
+  .grid-12 > .span-6 { display: block; width: 100%; padding: 10px 0; }
+  .grid-12 > .span-7 { display: block; width: 100%; padding: 10px 0; }
+  .grid-12 > .span-8 { display: block; width: 100%; padding: 10px 0; }
+  .grid-12 > .span-9 { display: block; width: 100%; padding: 10px 0; }
+  .grid-12 > .span-10 { display: block; width: 100%; padding: 10px 0; }
+  .grid-12 > .span-11 { display: block; width: 100%; padding: 10px 0; }
+  .grid-12 > .span-12 { display: block; width: 100%; padding: 10px 0; } }
+.content { display: block; margin: 0; position: relative; padding: 0 16px 32px; }
+
+/*  Headers  */
+header { display: block; height: 39px; line-height: 39px; background-color: #000; color: #fff; padding: 0; margin: 0 0 8px; }
+header h1, header h2, header h3, header h4, header h5 { font-size: 23px; font-weight: 300; margin: 0 0 0 10px; padding: 0; float: left; }
+header.fixed { position: fixed; top: 0; left: 0; right: 0; }
+header ul { display: block; float: right; }
+header ul li { display: block; border-left: solid 1px #333333; float: left; font-size: 14px; font-weight: 600; }
+header ul li a { display: block; color: #b3b3b3; padding: 0 10px; }
+header ul li a:hover { background-color: #333; color: #fff; }
+header.blue { background-color: #0000e8; }
+header.blue ul li { border-color: #4f4fff; }
+header.blue ul li a { color: #b5b5ff; }
+header.blue ul li a:hover { background-color: #3636ff; color: #fff; }
+header.green { background-color: #00c600; }
+header.green h1, header.green h2, header.green h3, header.green h4, header.green h5 { color: #000; }
+header.green ul li { border-color: #00ad00; }
+header.green ul li a { color: #004700; }
+header.green ul li a:hover { background-color: #009300; }
+header.red { background-color: #e80000; }
+header.red ul li { border-color: #ff4f4f; }
+header.red ul li a { color: #ff9c9c; }
+header.red ul li a:hover { background-color: #b50000; color: #fff; }
+header.gray { background-color: #999; }
+header.gray h1, header.gray h2, header.gray h3, header.gray h4, header.gray h5 { color: #000; }
+header.gray ul li { border-color: #737373; }
+header.gray ul li a { color: #404040; }
+header.gray ul li a:hover { background-color: #737373; color: #000; }
+
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-device-pixel-ratio: 1.25), only screen and (max-width: 480px) { header { position: fixed; top: 0; left: 0; right: 0; /*  Need to convert links to a menu  */ }
+  header h1, header h2, header h3, header h4, header h5 { font-size: 19px; font-size: 1.1875rem; font-weight: 600; }
+  header ul { display: block; position: absolute; top: 0; right: 0; }
+  header ul li { font-size: 16px; font-size: 1rem; } }
+/*  Forms  */
+input, button, select, textarea, label, fieldset, legend { box-sizing: border-box; }
+
+fieldset { display: block; border: solid 2px #cccccc; border-radius: 10px; padding: 10px 20px 20px; margin: 0; }
+fieldset legend { border-left: solid 5px #fff; border-right: solid 5px #fff; font-size: 21px; font-size: 1.3125rem; letter-spacing: 0.02em; font-weight: 400; color: #999; position: relative; top: -1px; }
+fieldset dl { padding: 0; margin: 16px 0; text-indent: 0; }
+fieldset dl dt { display: block; color: #fff; font-size: 11px; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; padding: 5px 10px; margin: 0; background-color: #999; border-radius: 5px 5px 0 0; }
+fieldset dl dd { min-height: 39px; text-indent: 0; padding: 10px 10px; margin: 0; font-size: 13px; font-size: 0.8125rem; border: solid 2px #999; border-top: none; border-radius: 0 0 5px 5px; }
+
+form dl dd { min-height: 39px; }
+form dl dd input[type=text], form dl dd input[type=password], form dl dd input[type=number], form dl dd input[type=date], form dl dd input[type=tel], form dl dd input[type=email], form dl dd select, form dl dd textarea { border: none; background-color: transparent; padding: 0 10px; }
+
+input[type=text], input[type=password], input[type=number], input[type=date], input[type=tel], input[type=email] { -webkit-appearance: none; appearance: none; outline: none; height: 29px; padding: 0 5px; margin: 0; line-height: 29px; border: solid 1px #999; color: #000; font-size: 14px; font-size: 0.875rem; display: inline-block; width: 100%; }
+
+select { -webkit-appearance: none; appearance: none; display: block; width: 100%; outline: none; font-size: 15px; font-size: 0.9375rem; color: #000; background-color: #cccccc; background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQ1MS44NDcgNDUxLjg0NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUxLjg0NyA0NTEuODQ3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTIyNS45MjMsMzU0LjcwNmMtOC4wOTgsMC0xNi4xOTUtMy4wOTItMjIuMzY5LTkuMjYzTDkuMjcsMTUxLjE1N2MtMTIuMzU5LTEyLjM1OS0xMi4zNTktMzIuMzk3LDAtNDQuNzUxICAgYzEyLjM1NC0xMi4zNTQsMzIuMzg4LTEyLjM1NCw0NC43NDgsMGwxNzEuOTA1LDE3MS45MTVsMTcxLjkwNi0xNzEuOTA5YzEyLjM1OS0xMi4zNTQsMzIuMzkxLTEyLjM1NCw0NC43NDQsMCAgIGMxMi4zNjUsMTIuMzU0LDEyLjM2NSwzMi4zOTIsMCw0NC43NTFMMjQ4LjI5MiwzNDUuNDQ5QzI0Mi4xMTUsMzUxLjYyMSwyMzQuMDE4LDM1NC43MDYsMjI1LjkyMywzNTQuNzA2eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=); background-size: 16px 10px; background-position: right; background-repeat: no-repeat; border: solid 1px #999; height: 29px; line-height: 29px; padding: 0 10px; margin: 0; }
+
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-device-pixel-ratio: 1.25), only screen and (max-width: 480px) { fieldset { margin: 0; padding: 0; border: none; }
+  fieldset legend { border: none; font-size: 19px; font-size: 1.1875rem; color: gray; padding: 0; margin: 0; }
+  fieldset dl dt { font-size: 12px; font-size: 0.75rem; letter-spacing: 0.03em; }
+  fieldset dl dd { font-size: 16px; font-size: 1rem; }
+  input[type=text], input[type=password], input[type=number], input[type=date], input[type=tel], input[type=email], select, textarea { font-size: 16px; font-size: 1rem; } }

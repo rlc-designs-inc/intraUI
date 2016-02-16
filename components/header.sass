@@ -1,0 +1,123 @@
+/*  Headers  */
+header
+	display: block
+	height: 39px
+	line-height: 39px
+	background-color: $black
+	color: $white
+	padding: 0
+	margin: 0 0 8px
+
+	h1,h2,h3,h4,h5 
+		font-size: 23px
+		font-weight: 300
+		margin: 0 0 0 10px
+		padding: 0
+		float: left
+
+	&.fixed
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+
+	ul
+		display: block
+		float: right
+
+		li 
+			display: block
+			border-left: solid 1px lighten($black, 20%)
+			float: left
+			font-size: 14px
+			font-weight: 600
+
+			a
+				display: block
+				color: $lighter_gray
+				padding: 0 10px
+
+				&:hover 
+					background-color: #333
+					color: $white
+
+
+	&.blue
+		background-color: $blue
+
+		ul
+			li
+				border-color: lighten($blue, 20%)
+				a
+					color: lighten($blue, 40%)
+					&:hover
+						background-color: lighten($blue, 15%)
+						color: $white
+
+
+	&.green
+		background-color: $green
+
+		h1,h2,h3,h4,h5 
+			color: $black
+
+		ul
+			li
+				border-color: darken($green, 5%)
+				a
+					color: darken($green, 25%)
+					&:hover
+						background-color: darken($green, 10%)
+
+
+	&.red
+		background-color: $red
+
+		ul
+			li
+				border-color: lighten($red, 20%)
+				a
+					color: lighten($red, 35%)
+					&:hover
+						background-color: darken($red, 10%)
+						color: $white
+
+
+	&.gray
+		background-color: $gray
+
+		h1,h2,h3,h4,h5
+			color: $black
+
+		ul
+			li
+				border-color: $darker_gray
+				a
+					color: darken($gray, 35%)
+					&:hover
+						background-color: darken($gray, 15%)
+						color: $black
+
+
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-device-pixel-ratio: 1.25), only screen and (max-width: 480px)
+	header
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+
+		h1,h2,h3,h4,h5
+			+size(19)
+			font-weight: 600
+
+		/*  Need to convert links to a menu  */
+		ul
+			display: block
+			position: absolute
+			top: 0
+			right: 0
+			
+			
+			li
+				+size(16)
+				
