@@ -1,12 +1,9 @@
 /*  Forms  */
-input,button,select,textarea,label,fieldset,legend
-	box-sizing: border-box
-
 fieldset
 	display: block
 	border: solid 2px lighten($gray, 20%)
 	border-radius: 10px
-	padding: 10px 20px 20px
+	padding: 10px 20px 20px !important
 	margin: 0
 
 	legend
@@ -47,6 +44,9 @@ fieldset
 
 
 form
+	fieldset
+		padding: 10px 20px 20px
+
 	dl
 		dd
 			min-height: 39px			
@@ -93,7 +93,7 @@ select
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-device-pixel-ratio: 1.25), only screen and (max-width: 480px)
 	fieldset
 		margin: 0
-		padding: 0
+		padding: 0 !important
 		border: none
 
 		legend
@@ -112,3 +112,6 @@ select
 
 	input[type=text],input[type=password],input[type=number],input[type=date],input[type=tel],input[type=email],select,textarea
 		+size(16)
+
+
+

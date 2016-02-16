@@ -507,14 +507,13 @@ header.gray ul li a:hover { background-color: #737373; color: #000 !important; }
   header ul { display: block; position: absolute; top: 0; right: 0; }
   header ul li { font-size: 16px; font-size: 1rem; } }
 /*  Forms  */
-input, button, select, textarea, label, fieldset, legend { box-sizing: border-box; }
-
-fieldset { display: block; border: solid 2px #cccccc; border-radius: 10px; padding: 10px 20px 20px; margin: 0; }
+fieldset { display: block; border: solid 2px #cccccc; border-radius: 10px; padding: 10px 20px 20px !important; margin: 0; }
 fieldset legend { border-left: solid 5px #fff; border-right: solid 5px #fff; font-size: 21px; font-size: 1.3125rem; letter-spacing: 0.02em; font-weight: 400; color: #999; position: relative; top: -1px; }
 fieldset dl { padding: 0; margin: 16px 0; text-indent: 0; }
 fieldset dl dt { display: block; color: #fff; font-size: 11px; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; padding: 5px 10px; margin: 0; background-color: #999; border-radius: 5px 5px 0 0; }
 fieldset dl dd { min-height: 39px; text-indent: 0; padding: 10px 10px; margin: 0; font-size: 13px; font-size: 0.8125rem; border: solid 2px #999; border-top: none; border-radius: 0 0 5px 5px; }
 
+form fieldset { padding: 10px 20px 20px; }
 form dl dd { min-height: 39px; }
 form dl dd input[type=text], form dl dd input[type=password], form dl dd input[type=number], form dl dd input[type=date], form dl dd input[type=tel], form dl dd input[type=email], form dl dd select, form dl dd textarea { border: none; background-color: transparent; padding: 0 10px; }
 
@@ -522,7 +521,7 @@ input[type=text], input[type=password], input[type=number], input[type=date], in
 
 select { -webkit-appearance: none; appearance: none; display: block; width: 100%; outline: none; font-size: 15px; font-size: 0.9375rem; color: #000; background-color: #cccccc; background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQ1MS44NDcgNDUxLjg0NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUxLjg0NyA0NTEuODQ3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTIyNS45MjMsMzU0LjcwNmMtOC4wOTgsMC0xNi4xOTUtMy4wOTItMjIuMzY5LTkuMjYzTDkuMjcsMTUxLjE1N2MtMTIuMzU5LTEyLjM1OS0xMi4zNTktMzIuMzk3LDAtNDQuNzUxICAgYzEyLjM1NC0xMi4zNTQsMzIuMzg4LTEyLjM1NCw0NC43NDgsMGwxNzEuOTA1LDE3MS45MTVsMTcxLjkwNi0xNzEuOTA5YzEyLjM1OS0xMi4zNTQsMzIuMzkxLTEyLjM1NCw0NC43NDQsMCAgIGMxMi4zNjUsMTIuMzU0LDEyLjM2NSwzMi4zOTIsMCw0NC43NTFMMjQ4LjI5MiwzNDUuNDQ5QzI0Mi4xMTUsMzUxLjYyMSwyMzQuMDE4LDM1NC43MDYsMjI1LjkyMywzNTQuNzA2eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=); background-size: 16px 10px; background-position: right; background-repeat: no-repeat; border: solid 1px #999; height: 29px; line-height: 29px; padding: 0 10px; margin: 0; }
 
-@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-device-pixel-ratio: 1.25), only screen and (max-width: 480px) { fieldset { margin: 0; padding: 0; border: none; }
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-device-pixel-ratio: 1.25), only screen and (max-width: 480px) { fieldset { margin: 0; padding: 0 !important; border: none; }
   fieldset legend { border: none; font-size: 19px; font-size: 1.1875rem; color: gray; padding: 0; margin: 0; }
   fieldset dl dt { font-size: 12px; font-size: 0.75rem; letter-spacing: 0.03em; }
   fieldset dl dd { font-size: 16px; font-size: 1rem; }
