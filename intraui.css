@@ -481,26 +481,26 @@ header h1, header h2, header h3, header h4, header h5 { font-size: 23px; font-we
 header.fixed { position: fixed; top: 0; left: 0; right: 0; }
 header ul { display: block; float: right; }
 header ul li { display: block; border-left: solid 1px #333333; float: left; font-size: 14px; font-weight: 600; }
-header ul li a { display: block; color: #b3b3b3; padding: 0 10px; }
-header ul li a:hover { background-color: #333; color: #fff; }
+header ul li a { display: block; color: #b3b3b3 !important; padding: 0 10px; }
+header ul li a:hover { background-color: #333; color: #fff !important; }
 header.blue { background-color: #0000e8; }
 header.blue ul li { border-color: #4f4fff; }
-header.blue ul li a { color: #b5b5ff; }
-header.blue ul li a:hover { background-color: #3636ff; color: #fff; }
+header.blue ul li a { color: #b5b5ff !important; }
+header.blue ul li a:hover { background-color: #3636ff; color: #fff !important; }
 header.green { background-color: #00c600; }
 header.green h1, header.green h2, header.green h3, header.green h4, header.green h5 { color: #000; }
 header.green ul li { border-color: #00ad00; }
-header.green ul li a { color: #004700; }
+header.green ul li a { color: #004700 !important; }
 header.green ul li a:hover { background-color: #009300; }
 header.red { background-color: #e80000; }
 header.red ul li { border-color: #ff4f4f; }
-header.red ul li a { color: #ff9c9c; }
-header.red ul li a:hover { background-color: #b50000; color: #fff; }
+header.red ul li a { color: #ff9c9c !important; }
+header.red ul li a:hover { background-color: #b50000; color: #fff !important; }
 header.gray { background-color: #999; }
 header.gray h1, header.gray h2, header.gray h3, header.gray h4, header.gray h5 { color: #000; }
 header.gray ul li { border-color: #737373; }
-header.gray ul li a { color: #404040; }
-header.gray ul li a:hover { background-color: #737373; color: #000; }
+header.gray ul li a { color: #404040 !important; }
+header.gray ul li a:hover { background-color: #737373; color: #000 !important; }
 
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-device-pixel-ratio: 1.25), only screen and (max-width: 480px) { header { position: fixed; top: 0; left: 0; right: 0; /*  Need to convert links to a menu  */ }
   header h1, header h2, header h3, header h4, header h5 { font-size: 19px; font-size: 1.1875rem; font-weight: 600; }

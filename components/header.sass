@@ -34,12 +34,12 @@ header
 
 			a
 				display: block
-				color: $lighter_gray
+				color: lighten($gray, 10%) !important
 				padding: 0 10px
 
 				&:hover 
 					background-color: #333
-					color: $white
+					color: $white !important
 
 
 	&.blue
@@ -49,10 +49,10 @@ header
 			li
 				border-color: lighten($blue, 20%)
 				a
-					color: lighten($blue, 40%)
+					color: lighten($blue, 40%) !important
 					&:hover
-						background-color: lighten($blue, 15%)
-						color: $white
+						background-color: lighten($blue, 15%) 
+						color: $white !important
 
 
 	&.green
@@ -65,7 +65,7 @@ header
 			li
 				border-color: darken($green, 5%)
 				a
-					color: darken($green, 25%)
+					color: darken($green, 25%) !important
 					&:hover
 						background-color: darken($green, 10%)
 
@@ -77,10 +77,10 @@ header
 			li
 				border-color: lighten($red, 20%)
 				a
-					color: lighten($red, 35%)
+					color: lighten($red, 35%) !important
 					&:hover
 						background-color: darken($red, 10%)
-						color: $white
+						color: $white !important
 
 
 	&.gray
@@ -93,10 +93,10 @@ header
 			li
 				border-color: $darker_gray
 				a
-					color: darken($gray, 35%)
+					color: darken($gray, 35%) !important
 					&:hover
 						background-color: darken($gray, 15%)
-						color: $black
+						color: $black !important
 
 
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-device-pixel-ratio: 1.25), only screen and (max-width: 480px)
@@ -116,7 +116,7 @@ header
 			position: absolute
 			top: 0
 			right: 0
-			
+
 			
 			li
 				+size(16)
