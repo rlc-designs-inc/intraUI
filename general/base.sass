@@ -2,6 +2,8 @@
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
 	box-sizing: border-box
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif
+
 
 html 
 	height: 100%
@@ -15,8 +17,7 @@ body
 	margin: 0 auto
 	padding: 0
 	cursor: default
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif
-	font-size: 14px
+	+size(15)
 	line-height: 1.4
 	text-rendering: optimizeLegibility
 	+size(14)
@@ -25,8 +26,8 @@ a
 	color: $blue
 	text-decoration: none
 	&:hover
-		text-decoration: none
-		color: darken($blue, 25%)
+		text-decoration: underline
+		color: lighten($blue, 25%)
 	&:visited,
 	&:active,
 	&:link
@@ -40,11 +41,43 @@ address, block, code
 
 block, code
 	background-color: lighten($gray, 25%)
+	font-family: 'Source Code Pro', monospace
+	font-weight: 500
+	+size(14)
+
+dd, fieldset, p
+	+size(15)
+	font-weight: 300
 
 p
-	+size(14)
 	padding: 0
 	margin: 16px 0
+
+
+h1,h2,h3,h4,h5,h6 
+	margin: 0 0 16px
+	padding: 0
+	color: darken($gray, 10%)
+
+h1,h2
+	font-weight: 300
+h3,h4
+	font-weight: 400
+h5,h6
+	font-weight: 600
+h1
+	+size(36)
+h2
+	+size(32)
+h3
+	+size(28)
+h4
+	+size(24)
+h5
+	+size(18)
+h6
+	+size(15)
+
 
 ul 
 	list-style: none

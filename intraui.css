@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
@@ -79,21 +80,43 @@ textarea { overflow: auto; vertical-align: top; }
 
 table { border-spacing: 0; }
 
-* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "Source Sans Pro", Arial, Helvetica, sans-serif; }
 
 html { height: 100%; }
 
-body { min-width: 960px; max-width: 1200px; width: auto; background: #fff; color: #000; margin: 0 auto; padding: 0; cursor: default; font-family: "Open Sans", Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.4; text-rendering: optimizeLegibility; font-size: 14px; font-size: 0.875rem; }
+body { min-width: 960px; max-width: 1200px; width: auto; background: #fff; color: #000; margin: 0 auto; padding: 0; cursor: default; font-size: 15px; font-size: 0.9375rem; line-height: 1.4; text-rendering: optimizeLegibility; font-size: 14px; font-size: 0.875rem; }
 
 a { color: #0000e8; text-decoration: none; }
-a:hover { text-decoration: none; color: #000069; }
+a:hover { text-decoration: underline; color: #6969ff; }
 a:visited, a:active, a:link { color: #000082; }
 
 address, block, code { display: block; padding: 16px; margin: 16px 0; font-size: 14px; font-size: 0.875rem; }
 
-block, code { background-color: #d9d9d9; }
+block, code { background-color: #d9d9d9; font-family: "Source Code Pro", monospace; font-weight: 500; font-size: 14px; font-size: 0.875rem; }
 
-p { font-size: 14px; font-size: 0.875rem; padding: 0; margin: 16px 0; }
+dd, fieldset, p { font-size: 15px; font-size: 0.9375rem; font-weight: 300; }
+
+p { padding: 0; margin: 16px 0; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0 0 16px; padding: 0; color: gray; }
+
+h1, h2 { font-weight: 300; }
+
+h3, h4 { font-weight: 400; }
+
+h5, h6 { font-weight: 600; }
+
+h1 { font-size: 36px; font-size: 2.25rem; }
+
+h2 { font-size: 32px; font-size: 2rem; }
+
+h3 { font-size: 28px; font-size: 1.75rem; }
+
+h4 { font-size: 24px; font-size: 1.5rem; }
+
+h5 { font-size: 18px; font-size: 1.125rem; }
+
+h6 { font-size: 15px; font-size: 0.9375rem; }
 
 ul { list-style: none; margin: 0; padding: 0; }
 
@@ -520,6 +543,10 @@ form dl dd input[type=text], form dl dd input[type=password], form dl dd input[t
 input[type=text], input[type=password], input[type=number], input[type=date], input[type=tel], input[type=email] { -webkit-appearance: none; appearance: none; outline: none; height: 29px; padding: 0 5px; margin: 0; line-height: 29px; border: solid 1px #999; color: #000; font-size: 14px; font-size: 0.875rem; display: inline-block; width: 100%; }
 
 select { -webkit-appearance: none; appearance: none; display: block; width: 100%; outline: none; font-size: 15px; font-size: 0.9375rem; color: #000; background-color: #cccccc; background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQ1MS44NDcgNDUxLjg0NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUxLjg0NyA0NTEuODQ3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTIyNS45MjMsMzU0LjcwNmMtOC4wOTgsMC0xNi4xOTUtMy4wOTItMjIuMzY5LTkuMjYzTDkuMjcsMTUxLjE1N2MtMTIuMzU5LTEyLjM1OS0xMi4zNTktMzIuMzk3LDAtNDQuNzUxICAgYzEyLjM1NC0xMi4zNTQsMzIuMzg4LTEyLjM1NCw0NC43NDgsMGwxNzEuOTA1LDE3MS45MTVsMTcxLjkwNi0xNzEuOTA5YzEyLjM1OS0xMi4zNTQsMzIuMzkxLTEyLjM1NCw0NC43NDQsMCAgIGMxMi4zNjUsMTIuMzU0LDEyLjM2NSwzMi4zOTIsMCw0NC43NTFMMjQ4LjI5MiwzNDUuNDQ5QzI0Mi4xMTUsMzUxLjYyMSwyMzQuMDE4LDM1NC43MDYsMjI1LjkyMywzNTQuNzA2eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=); background-size: 16px 10px; background-position: right; background-repeat: no-repeat; border: solid 1px #999; height: 29px; line-height: 29px; padding: 0 10px; margin: 0; }
+
+input[type=button], button, .button { border: none; background-color: #999; color: #fff; font-size: 15px; font-size: 0.9375rem; font-weight: 400; padding: 0 15px; height: 29px; line-height: 29px; border-radius: 3px; vertical-align: middle; }
+input[type=button].smaller, button.smaller, .button.smaller { height: 26px; line-height: 25px; font-size: 13px; font-size: 0.8125rem; font-weight: 600; padding: 1px 10px 0; }
+input[type=button].tiny, button.tiny, .button.tiny { height: 24px; line-height: 22px; font-size: 11px; font-size: 0.6875rem; font-weight: 600; padding: 2px 7px 0; }
 
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-device-pixel-ratio: 1.25), only screen and (max-width: 480px) { fieldset { margin: 0; padding: 0 !important; border: none; }
   fieldset legend { border: none; font-size: 19px; font-size: 1.1875rem; color: gray; padding: 0; margin: 0; }

@@ -90,6 +90,35 @@ select
 	margin: 0
 
 
+input[type=button],button,.button
+	border: none
+	background-color: $gray
+	color: $white
+	+size(15)
+	font-weight: 400
+	padding: 0 15px
+	height: 29px
+	line-height: 29px
+	border-radius: 3px
+	vertical-align: middle
+
+	&.smaller
+		height: 26px
+		line-height: 25px
+		+size(13)
+		font-weight: 600
+		padding: 1px 10px 0
+
+	&.tiny
+		height: 24px
+		line-height: 22px
+		+size(11)
+		font-weight: 600
+		padding: 2px 7px 0
+
+
+
+
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-device-pixel-ratio: 1.25), only screen and (max-width: 480px)
 	fieldset
 		margin: 0
